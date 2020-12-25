@@ -1,0 +1,240 @@
+
+body{
+    background: url("../images/background.png");
+}
+.index-body{
+    background: url("../images/lunwen03.jpg");
+    background-size: 800px;
+}
+/* ----------------- 设置padding间距-------------*/
+.m-padded-tb-mini{
+    /*一个em等于14px，因为semantic框架里的样式都添加了important，
+            所以自己的样式也要加import才会覆盖semantic中的*/
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+.m-padded-mini{
+    padding: 0.2em !important;
+}
+.m-padded-tiny{
+    padding:0.3em !important;
+}
+.m-padded-small{
+    padding:0.4em !important;
+}
+.m-padded-large{
+    padding:0.5em !important;
+}
+.m-padded-big{
+    padding:1.5em !important;
+}
+.m-padded-tb-tiny{
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+
+.m-padded-tb-small{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.m-padded-tb{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-padded-tb-large{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.m-padded-tb-big{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-padded-tb-huge{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+
+.m-padded-tb-massive{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+.m-padded-lr{
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+/* ----------------- 设置margin间距-------------*/
+.m-margin-top-small{
+    margin-top:0.5em !important;
+}
+.m-margin-top{
+    margin-top:1em !important;
+}
+.m-margin-top-large{
+    margin-top:2em !important;
+}
+.m-margin-top-huge{
+    margin-top:10em !important;
+}
+.m-margin-right-huge{
+    margin-right: 2em !important;
+}
+.m-margin-right-miny{
+    margin-right: 0.2em !important;
+}
+.m-margin-tb-tiny{
+    margin-top:0.3em !important;
+    margin-bottom:0.3em !important;
+}
+.m-margin-tb-large{
+    margin-top:10em !important;
+    margin-bottom:10em !important;
+}
+.m-margin-tb-huge{
+    margin-top:20em !important;
+    margin-bottom:20em !important;
+}
+.m-margin-bottom-small{
+    margin-bottom:0.5em !important;
+}
+.m-margin-small{
+    margin-top: 0.6em !important;
+    margin-bottom: 0.3em !important;
+    margin-left:2em !important;
+}
+/*----------------position----------------*/
+.m-position-right-top{
+    position: absolute !important;
+    right:0 !important;
+    top:0 !important;
+}
+
+/* ------------------设置字体-------------------*/
+.m-text{
+    font-weight:300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
+.m-text-thin{
+    font-weight:300 !important;
+}
+.m-font-color{
+    color: #333;
+}
+.m-font-size-small{
+    font-size:16px !important;
+}
+.m-font-size-middle{
+    font-size:20px !important;
+}
+
+/*---------字体间距-----------------*/
+.m-text-spaced{
+    letter-spacing: 1px !important;
+}
+/*-------行间距----------------------*/
+.m-text-lined{
+    line-height: 1.8;
+}
+/*-----------设置透明度------------------*/
+.m-opacity-miny{
+    opacity: 0.7 !important;
+}
+.m-opacity-small{
+    opacity: 0.5 !important;
+}
+.m-opacity{
+    opacity: 0.3 !important;
+}
+/*-------------display------------------*/
+.m-inline-block{
+    display:inline-block !important;
+}
+/*-----------photo-----------------*/
+.m-photo-size{
+    height:120px !important;
+    width:200px !important;
+}
+.m-photo-size-large{
+    height:470px !important;
+    /*wideth:100px !important;*/
+}
+.m-photo-size-huge{
+   width:610px !important;
+    height:610px !important;
+}
+/*--------------container------------*/
+.m-container{
+    max-width: 72em !important;
+    margin:auto !important;
+}
+.m-container-small{
+    max-width: 65em !important;
+    margin:auto !important;
+}
+.m-container-large{
+    margin-width:100% !important;
+}
+/*----------mobile settings*/
+/*当浏览器的宽度小于768px的时候就隐藏导航中的菜单*/
+@media screen and (max-width: 768px) {
+    .m-mobile-hide{
+         display: none !important;
+    }
+    .m-padded-lr {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .m-mobile-width{
+        width:100% !important;
+    }
+}
+@media screen and (min-width: 768px){
+    .m-mobile-show{
+        display:none !important ;
+    }
+}
+
+/*    -------------shadow---------------*/
+.m-shadow-small{
+    /* -webkit-box-shadow： 适配浏览器*/
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.4) !important;
+    /*rgba(0,0,0,0.4) 颜色和透明度*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4) !important;
+}
+
+/*-------------position-------------*/
+
+.m-fixed{
+    position:fixed !important;
+    /*优先级,防止被覆盖*/
+    z-index: 10 !important;
+}
+.m-right-bottom{
+    bottom:0 !important;
+    right: 0 !important;
+}
+/*  -------登录按钮的设计*/
+.signin{
+    /*display: block;*/
+    width:100%;
+    border-radius: 20px;
+    background-color:#1abc9c;
+    height:42px;
+    color: white;
+}
+ /*---------文章字体----------------*/
+ .article-content {
+    width: 100% !important;
+    line-height: 24px !important;
+    margin: 20px 0 40px !important;
+}
+ /*------超链接-----*/
+a:hover{
+    color: #1abc9c;
+}
+#student a:hover{
+    color: #C76114;
+}
+.ui.selection.dropdown {
+    border-radius: 0 .28571429rem .28571429rem 0!important;
+}
